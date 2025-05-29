@@ -1,6 +1,6 @@
 export default function Category(props) {
   return (
-    <>
+  
       <div
         className={`
  
@@ -34,6 +34,6 @@ export default function Category(props) {
           {props.title}
         </div>
       </div>
-    </>
+    
   );
 }

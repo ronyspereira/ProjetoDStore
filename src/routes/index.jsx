@@ -9,6 +9,7 @@ import Login from '../pages/Login';
 import CreateAccount from '../pages/CreateAccount';
 import CreateAccountForm from '../pages/CreateAccountForm';
 import Products from '../pages/Products';
+import Category from '../components/Categorias';
 
 
 export const router = createBrowserRouter([
@@ -19,6 +20,10 @@ export const router = createBrowserRouter([
   {
     path: '/produtos',
     element: <Products/>,
+  },
+  {
+    path: '/categorias',
+    element: <Category />,
   },
   {
     path: '/pedidosroutes',
@@ -50,7 +55,7 @@ export const router = createBrowserRouter([
   },
 
   {
-    path: '/test',
+    path: '/compra-realizada',
     element: <ContainerPurchase />,
   },
 

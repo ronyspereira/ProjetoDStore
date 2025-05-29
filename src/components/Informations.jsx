@@ -54,7 +54,7 @@ export default function informations() {
       </div>
       <div className='flex gap-2 items-center' >
         <Text type='mini-description' children="Cep:"/>
-        <Subtitles type='third2' children="60732260" />
+        <Subtitles type='third2' children="60732-260" />
       </div>
 
     

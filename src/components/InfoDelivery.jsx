@@ -2,10 +2,10 @@ import { useState } from "react"
 
 export default function InfoDelivery () {
     const [infoEntregas , setInfoEntregas] = useState({
-        endereco : "Rua 01",
-        bairro : "Centro",
+        endereco : "Rua Siqueira Campos, 1",
+        bairro : "Siqueira",
         cidade : "Fortaleza , Ceará",
-        cep : "433-8800"
+        cep : "60732-260"
     });
 
     return (

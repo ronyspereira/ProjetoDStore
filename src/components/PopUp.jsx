@@ -3,9 +3,18 @@ import Subtitles from '../components/Subtitles';
 import Text from '../components/Text';
 import tenisCollection from '../assets/images/tenisCollection.png';
 import Button from '../components/Button';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function PopUp() {
+
+  const navigate = useNavigate();
+
+  const handleComprarClick = () => {
+    navigate('/compra-realizada'); // mudar rotar para ver carrinho
+
+  }
+
   return (
     <div className="absolute right-120 md:right-40 z-10 top-24">
       <div className="flex flex-col p-7 w-[315px] h-[454px] bg-white drop-shadow-lg ">
@@ -79,7 +88,12 @@ export default function PopUp() {
 
         <div className='flex justify-between mt-6'>
             <Text type='gray-description' children='Esvaziar' className='underline'/>
-            <Button  type='default' color='pink' children='Comprar'/>
+            <Button  type='default' 
+            color='pink' 
+            children='Ver carrinho'
+            onClick={handleComprarClick}
+            
+            />
         </div>
 
 

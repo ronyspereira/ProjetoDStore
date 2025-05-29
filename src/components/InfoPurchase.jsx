@@ -2,8 +2,8 @@ import { useState } from "react"
 
 export default function InfoPurchase () {
     const [infoPagamento , setInfoPagamento] = useState({
-        titulo_cartao : "FRANCISMO A P",
-        final : "*********2020"
+        titulo_cartao : "RONY S PEREIRA",
+        final : "*********2025"
     })
 
     return (

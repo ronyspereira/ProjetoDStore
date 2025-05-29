@@ -7,11 +7,15 @@ import InfoPersonPurchase from "./InfoPersonPurchase";
 import Line from "./Line";
 import PurchaseSummary from "./PurchaseSummary";
 import PurchaseTotal from "./PurchaseTotal";
+import Header from "./Header";
+import Footer from "./Footer";
 
 export default function ContainerPurchase () {
     return (
         <>
-            <section className="rounded flex flex-col justify-center px-10 py-6 my-6 bg-slate-50 w-[768px] mx-auto">
+            <Header />
+            <div className="bg-slate-50 p-6">
+                <section className="rounded flex flex-col justify-center bg-white p-10 py-6 my-6 w-[768px] mx-auto rounded-sm ">
                 <HeaderPurchase />
                 <Line />
                 <InfoPersonPurchase />
@@ -25,6 +29,11 @@ export default function ContainerPurchase () {
                 <ButtonPrint />
             </section>
             <ButtonBackHome />
+
+            </div>
+            
+
+            <Footer />/
         </>
     )
 }

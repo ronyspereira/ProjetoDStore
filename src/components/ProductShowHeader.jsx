@@ -10,14 +10,14 @@ const ProductShowHeader = () => {
   return (
     <div className='flex justify-between'>
         <div>
-            <spam className='font-bold text-[#474747]'>Resultados para "{busca}"</spam>
-            <spam> - {numResultados} produtos</spam>
+            <span className='font-bold text-[#474747]'>Resultados para "{busca}"</span>
+            <span> - {numResultados} produtos</span>
         </div>
         <Button type='filter'>
             <div className='flex justify-between'>
                 
-                <spam className='font-bold text-[#474747]'>Ordenar por: </spam>
-                <spam className='ml-2'>{tipoBusca}</spam>
+                <span className='font-bold text-[#474747]'>Ordenar por: </span>
+                <span className='ml-2'>{tipoBusca}</span>
                 <img src={SetaBaixo} className='ml-5'/>
             </div>
         
